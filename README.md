@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Zoom Car Clone - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the clone of zoom car (car rental application), using the mern fullstack web application. The frontend was made using, ReactJS, Bootstrap for styling and antd for some components in the frontend pages. The backend was made using NodeJS, mongoDB, mongoose, ExpressJS, JWT and Bcrypt for hashing password. This app some functionalities such as user authentication, car booking management, payment gateway(using stripe) and admin features which allows is to use the CRUD applications (create, read, update and delete) on car that can be rented.
 
-## Available Scripts
+## Project Features
 
-In the project directory, you can run:
+- User authentication for secure access to the platform.
+- Booking management system for efficient rental services.
+- Admin dashboard with specialized features for company management.
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `client`: Contains the React.js frontend of the project.
+- `server`: Contains the Node.js and Express.js backend of the project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## FrontEnd Deployed URL
 
-### `npm test`
+🔸*Click on the Badge to Check out My Markdown Viewer Application Here*👉🏻 [![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)](https://zoomcar-clone-psv.netlify.app/login)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## BackEnd Render Deployed URL ⌛
 
-### `npm run build`
+🔸[![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)](https://zoomcar-clone-backend-45xc.onrender.com)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used in FrontEnd and BackEnd 🛠️
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white)
+![dotenv](https://img.shields.io/badge/dotenv-007A88?style=for-the-badge&logo=dotenv&logoColor=white)
+![cors](https://img.shields.io/badge/cors-1572B6?style=for-the-badge&logo=cors&logoColor=white)
+![Nodemailer](https://img.shields.io/badge/Nodemailer-339933?style=for-the-badge&logo=nodemailer&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Backend github URL
 
-### `npm run eject`
+URL: https://github.com/paviesh-SV/ZoomCar-Clone-Backend.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation 🧑🏻‍💻
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the Repository**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/paviesh-SV/ZoomCar-Clone-Backend.git
+   git clone https://github.com/paviesh-SV/ZoomCar-Clone-Frontend.git
+   ```
 
-## Learn More
+2. **Navigate to the Project Directory**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    open these two in 2 different windows of ide
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   cd zoomcar-clone-backend
+   cd zoomcar-clone-frontend
+   ```
 
-### Code Splitting
+3. **Install Dependencies for the Frontend**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    after cd zoomcar-clone-frontend
 
-### Analyzing the Bundle Size
+   ```bash
+   cd client
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Install Dependencies for the Backend**:
 
-### Making a Progressive Web App
+   ```bash
+   cd server
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. **Set up Environment Variables**:
 
-### Advanced Configuration
+   - Create a `.env` file in the `server` directory.
+   - Define the following variables:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+     ```plaintext
+     PORT=<your-port-number>
+     MONGODB_URL=<your-mongodb-uri>
+     JWT_SECRET=<your-jwt-secret>
+     STRIPE_KEY=<your-secret-stripekey>
+     ```
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Usage 🚀
 
-### `npm run build` fails to minify
+1. **Start the Backend Server**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   cd server
+   npm start
+   ```
+
+2. **Start the Frontend Development Server**:
+
+   ```bash
+   cd client
+   npm start
+   ```
+
+3. **Visit `http://localhost:<your-port>`** in your web browser to access the application.

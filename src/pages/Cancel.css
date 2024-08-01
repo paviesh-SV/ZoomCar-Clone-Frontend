@@ -1,0 +1,31 @@
+.cancel-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.cancel-container h1 {
+    color: #721c24;
+}
+
+.cancel-container p {
+    color: #721c24;
+}
+
+.cancel-container button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cancel-container button:hover {
+    background-color: #c82333;
+}

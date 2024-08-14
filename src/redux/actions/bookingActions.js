@@ -9,7 +9,8 @@ export const bookCar = (reqObj) => async (dispatch) => {
 
     try {
         // Step 1: Create Checkout Session
-        const response = await axios.post('http://localhost:5005/api/create-checkout-session', reqObj);
+        const response = await axios.post('https://zoomcar-clone-backend-45xc.onrender.com/api/create-checkout-session', reqObj);
+        // const response = await axios.post('http://localhost:5005/api/create-checkout-session', reqObj);
 
         const { id: sessionId } = response.data;
 
@@ -34,7 +35,8 @@ export const getAllBookings = () => async (dispatch) => {
     dispatch({ type: 'LOADING', payload: true });
 
     try {
-        const response = await axios.get('http://localhost:5005/api/getallbookings');
+        const response = await axios.get('https://zoomcar-clone-backend-45xc.onrender.com/api/getallbookings');
+        // const response = await axios.get('http://localhost:5005/api/getallbookings');
         dispatch({ type: 'GET_ALL_BOOKINGS', payload: response.data });
         dispatch({ type: 'LOADING', payload: false });
     } catch (err) {
